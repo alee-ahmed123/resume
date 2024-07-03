@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>alee.collection</title>
+    <style>
+        .box1{
+            /* border: 2px solid black; */
+            height: 800px;
+            /* background-color: red; */
+        }
+        .head{
+            /* border: 2px solid black; */
+            height: 200px;
+            /* background-color: blue; */
+            /* margin-top: 300px; */
+        }   
+        /* .head2{
+            border: 2px solid black;
+            height: 100px;
+            background-color: yellow;
+        } */
+        .head3{
+            /* border: 2px solid black; */
+            height: 300px;
+            /* background-color: brown; */
+        }
+        .nav{
+            border: 5px solid black;
+            height: 70px;
+            background: radial-gradient(rgb(83, 82, 82),rgb(151, 148, 148),rgb(36, 36, 36));
+            margin-top: 297px;
+            /* position: fixed; */
+            /* top: 290px; */
+
+        }
+        .box2{
+            height: 1513px;
+            /* background-color: green; */
+            border: 2px solid black;
+            margin-top: 120px;
+            /* width: 80%; */
+        }
+        .content{
+            height: 110px;
+            border-bottom: 2px double black;
+            /* border: 2px solid black; */
+            /* background-color: red; */
+        }
+        .content2{
+            height: 300px;
+            /* border: 2px solid black; */
+            /* background-color: blue; */
+            margin-top: 20px;
+        }
+        .content3{
+            height: 350px;
+            /* border: 2px solid black; */
+            /* background-color: pink; */
+            margin-top: 10px;
+        }
+        .content4{
+            height: 350px;
+            /* border: 2px solid black; */
+            /* background-color: pink; */
+            margin-top: 10px;
+        }
+        .content5{
+            height: 350px;
+            /* border: 2px solid black; */
+            /* background-color: pink; */
+            margin-top: 10px;
+        }
+        
+        .box3{
+            height: 1513px;
+            /* background-color: green; */
+            border: 2px solid black;
+            margin-top: 120px;
+            width: 110%;
+            /* margin-left: 10px; */
+        }
+        .box4{
+            height: 1513px;
+            /* background-color: green; */
+            border: 2px solid black;
+            margin-top: 120px;
+            width: 110%;
+            margin-left: -12px;
+        }
+        .box5{
+            height: 1513px;
+            /* background-color: green; */
+            border: 2px solid black;
+            margin-top: 120px;
+            width: 120%;
+            margin-left: -12px;
+        }
+        .box6{
+            height: 1513px;
+            /* background-color: green; */
+            border: 2px solid black;
+            margin-top: 120px;
+            width: 110%;
+            margin-left: -12px;
+        }
+        .box7{
+            height: 1513px;
+            /* background-color: green; */
+            border: 2px solid black;
+            margin-top: 120px;
+            width: 110%;
+            margin-left: -12px;
+        }
+        .box8{
+            height: 1513px;
+            /* background-color: green; */
+            border: 2px solid black;
+            margin-top: 120px;
+            width: 110%;
+            margin-left: -12px;
+        }
+        .alee h1{
+            text-transform: capitalize;
+            font-size: 45px;
+            color: #000;
+            text-align: center;
+            font-family: serif;
+            margin-top: 20px;
+        }
+        .alee h2{
+            text-transform: capitalize;
+            font-size: 55px;
+            color: #000;
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: underline;
+            margin-top: 20px;            
+
+        }
+        .alee1 img{
+            width: 100%;
+            height: 300px;
+            /* align-items: center; */
+            /* margin-left: 200px; */
+            border: 7px solid black;
+        }
+        .collect{
+            border: 7px solid black;
+            height: 292px;
+            margin-left: 1px;
+            /* background-color: green; */
+
+        }
+        .pent{
+            background-image: url(pents/pentlogo.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .showes{
+            background-image: url(shoes/showeslogo.jpg);
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .coat{
+            background-image: url(coatpent/3peace.jpg);
+            background-size: cover;
+            background-position: center ;
+        }
+        .perfume{
+            background-image:url(perfumes/perfumelogo.jpg);
+            background-size: cover;
+            background-position: center ;
+        }
+        .shirt{
+            background-image:url(t-shirts/logo4.jpg);
+            background-size: cover;
+            background-position: 60% 50%;
+            background-repeat: no-repeat;
+        }
+        .watch{
+            background-image:url(watches/watchlogo.jpg);
+            background-size: cover;
+            background-position: center ;
+        }
+        .alee2 h1{
+            color: #fff;
+            font-size: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-transform: capitalize;
+            margin-left: 30px;
+        }
+        .list{
+            margin-top: -70px;
+            position: relative;
+            right: -600px;
+        }
+        .list ul{
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+            font-size: 35px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: capitalize;
+            padding-top: 7px;
+        }
+        .list ul li{
+            padding-left: 30px;
+        }
+        /* shirts */
+        .shirt1 h1{
+            color: black;
+            font-size: 45px;
+            text-align: center;
+            text-transform: capitalize;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .shirt1 h2{
+            color: rgb(73, 71, 71);
+            font-size: 35px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: underline;
+            position: relative;
+            bottom: 10px;
+        }
+        .bgimg{
+            background-image: url(t-shirts/shirts.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .one img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .one img:hover{
+            transform: translatey(-10%);
+        }
+        .two img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+            
+        }
+        .two img:hover{
+            transform: translatey(-5%);
+        }
+        .three img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .three img:hover{
+            transform: translatey(-5%);
+        }
+        .four img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .four img:hover{
+            transform: translatey(-10%);
+        }
+        .five img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .five img:hover{
+            transform: translatey(-10%);
+        }
+        .six img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .six img:hover{
+            transform: translatey(-10%);
+        }
+        .one h1{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .one h2{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .one ul{
+            display: flex;
+        }
+        .one ul li{
+            list-style-type: none;
+        }
+        .one ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .one i:hover{
+            color: goldenrod;
+        }
+        .two h1{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .two h2{
+            text-transform: capitalize;
+            color: #000;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .two ul{
+            display: flex;
+        }
+        .two ul li{
+            list-style-type: none;
+        }
+        .two ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .two i:hover{
+            color: goldenrod;
+        }
+        .three h1{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .three h2{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .three ul{
+            display: flex;
+        }
+        .three ul li{
+            list-style-type: none;
+        }
+        .three ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .three i:hover{
+            color: goldenrod;
+        }
+        .four h1{
+            font-size:  20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .four h2{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .four ul{
+            display: flex;
+        }
+        .four ul li{
+            list-style-type: none;
+        }
+        .four ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .four i:hover{
+            color: goldenrod;
+        }
+        .five h1{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .five h2{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .five ul{
+            display: flex;
+        }
+        .five ul li{
+            list-style-type: none;
+        }
+        .five ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .five i:hover{
+            color: goldenrod;
+        }
+        .six h1{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .six h2{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .six ul{
+            display: flex;
+        }
+        .six ul li{
+            list-style-type: none;
+        }
+        .six ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .six i:hover{
+            color: goldenrod;
+        }
+      /* pents  */
+      .pent2 h1{
+            color: black;
+            font-size: 45px;
+            text-align: center;
+            text-transform: capitalize;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .pent2 h2{
+            color: rgb(73, 71, 71);
+            font-size: 35px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-decoration: underline;
+            position: relative;
+            bottom: 10px;
+        }
+        .pent3{
+            background-image: url(pents/pents.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+
+        }
+        .coat2{
+            background-image: url(coatpent/coat\ logo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .one1 img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .one1 img:hover{
+            transform: translatey(-10%);
+        }
+        .one1 h1{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            right: 105px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .one1 h2{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 2px;
+            text-decoration: none;
+            right: 87px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .one1 ul{
+            display: flex;
+        }
+        .one1 ul li{
+            list-style-type: none;
+        }
+        .one1 ul li i{
+            position: relative;
+            right: 32px;
+            bottom: 5px;
+        }
+        .one1 i:hover{
+            color: goldenrod;
+        }
+
+        .two2 img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .two2 img:hover{
+            transform: translatey(-5%);
+        }
+        .two2 h1{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            right: 100px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .two2 h2{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 2px;
+            text-decoration: none;
+            right: 88px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .two2 ul{
+            display: flex;
+        }
+        .two2 ul li{
+            list-style-type: none;
+        }
+        .two2 ul li i{
+            position: relative;
+            right: 33px;
+            bottom: 5px;
+        }
+        .two2 i:hover{
+            color: goldenrod;
+        }
+
+        .three3 img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .three3 img:hover{
+            transform: translatey(-5%);
+        }
+        .three3 h1{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            right: 95px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .three3 h2{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 2px;
+            text-decoration: none;
+            right: 85px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .three3 ul{
+            display: flex;
+        }
+        .three3 ul li{
+            list-style-type: none;
+        }
+        .three3 ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .three3 i:hover{
+            color: goldenrod;
+        }
+
+        .four4 img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .four4 img:hover{
+            transform: translatey(-10%);
+        }
+        .four4 h1{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            right: 95px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+        .four4 h2{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            font-weight: bold;
+            top: 2px;
+            text-decoration: none;
+            right: 85px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .four4 ul{
+            display: flex;
+        }
+        .four4 ul li{
+            list-style-type: none;
+        }
+        .four4 ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .four4 i:hover{
+            color: goldenrod;
+        }
+
+        .five5 img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .five5 img:hover{
+            transform: translatey(-10%);
+        }
+        .five5 h1{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            right: 218px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+        .five5 h2{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            font-weight: bold;
+            position: relative;
+            top: 2px;
+            text-decoration: none;
+            right: 240px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .five5 ul{
+            display: flex;
+        }
+        .five5 ul li{
+            list-style-type: none;
+        }
+        .five5 ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .five5 i:hover{
+            color: goldenrod;
+        }
+
+        
+        .six6 img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .six6 img:hover{
+            transform: translatey(-10%);
+        }
+        .six6 h1{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            right: 218px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+        .six6 h2{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            font-weight: bold;
+            position: relative;
+            top: 2px;
+            text-decoration: none;
+            right: 240px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .six6 ul{
+            display: flex;
+        }
+        .six6 ul li{
+            list-style-type: none;
+        }
+        .six6 ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .six6 i:hover{
+            color: goldenrod;
+        }
+
+        .shoes2{
+            background-image: url(shoes/shoes.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .six66 img{
+            width: 100%;
+            height: 250px;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+        }
+        .six66 img:hover{
+            transform: translatey(-10%);
+        }
+        .six66 h1{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            position: relative;
+            top: 5px;
+            right: 205px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+        .six66 h2{
+            font-size: 20px;
+            text-transform: capitalize;
+            color: #000;
+            font-weight: bold;
+            position: relative;
+            top: 2px;
+            text-decoration: none;
+            right: 240px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .six66 ul{
+            display: flex;
+        }
+        .six66 ul li{
+            list-style-type: none;
+        }
+        .six66 ul li i{
+            position: relative;
+            right: 30px;
+            bottom: 5px;
+        }
+        .six66 i:hover{
+            color: goldenrod;
+        }
+
+        .watch2{
+            background-image: url(watches/watch.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .perfume2{
+            background-image: url(perfumes/perfume.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="container-fluid box1"> 
+        <div class="row head">
+            <div class="col-sm-md-1 alee">
+                <h1>alee. garments</h1>
+                <h2>men collection's</h2>
+            </div>
+        </div>
+        <div class="row head3">
+            <div class="col-md-sm-4 offset-sm-md-4  alee1 ">
+                <img src="coatpent/coat logo.jpg" alt="">
+            </div>
+            <div class="row collect">
+                <div class="col-sm-2  pent " >
+                    <!-- <img src="pents/pentlogo.jpg" alt=""> -->
+                </div>
+                <div class="col-sm-2  coat " >
+                    <!-- <img src="coat pent/coatlogo.jpg" alt=""> -->
+                </div>
+                <div class="col-sm-2  perfume " >
+                    <!-- <img src="perfumes/perfumelogo.jpg" alt=""> -->
+                </div>
+                <div class="col-sm-2 shirt " >
+                    <!-- <img src="t-shirts/logo4.jpg" alt=""> -->
+                </div>
+                <div class="col-sm-2  watch " >
+                    <!-- <img src="watches/watchlogo.jpg" alt=""> -->
+                </div>
+                <div class="col-sm-2  showes " >
+                </div>
+            </div>
+        </div>
+        <div class="row nav">
+            <div class="col-md-2  alee2">
+                <h1>alee.</h1>
+                <div class="col-md-6 offset-4 list">
+                    <ul>
+                        <li>home</li>
+                        <li>about</li>
+                        <li>contect</li>
+                        <li>brands</li>
+                    </ul>
+                </div>  
+
+            </div>
+        </div>
+    </div>
+    <!-- shirts -->
+    <div class="container box2">
+        <div class="row content">
+            <div class="col-6 offset-3  shirt1">
+                <h1>t-shirts</h1>
+                <h2>collection</h2>
+            </div>
+        </div>
+        <div class="row content2 ">
+            <div class="col-6 offset-3  bgimg"></div>
+        </div>
+        <div class="row content3">
+            <div class="col-md-3 col-sm-6  one">
+                <img src="t-shirts/shirt1.jpg" alt="">
+                <h1>price- $185</h1>
+                <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+
+            </div>
+            <div class="col-md-3  col-sm-6  two">
+                <img src="t-shirts/shirt2.jpg" alt="">
+                <h1>price- $210</h1>
+                <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 three">
+                <img src="t-shirts/shirt3.jpg" alt="">
+                <h1>price- $255</h1>
+                <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6  four">
+                <img src="t-shirts/shirt4.jpg" alt="">
+                <h1>price- $150</h1>
+                <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row content4">
+            <div class="col-md-3 col-sm-6  one">
+                <img src="t-shirts/shirt5.jpg" alt="">
+                <h1>price- $250</h1>
+                <h2> sales 50% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6  two">
+                <img src="t-shirts/shirt6.jpg" alt="">
+                <h1>price- $420</h1>
+                <h2> sales 50% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6  three">
+                <img src="t-shirts/shirt7.jpg">
+                <h1>price- $370</h1>
+                <h2> sales 50% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6  four">
+                <img src="t-shirts/shirt8.jpg" alt="">
+                <h1>price- $425</h1>
+                <h2> sales 50% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row content5">
+            <div class="col-md-6 col-sm-12 five">
+                <img src="t-shirts/shirt9.jpg" alt="">
+                <h1>price- <strike>$425</strike> / $200 </h1>
+                <h2> buy one get one</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-sm-12  six">
+                <img src="t-shirts/shirt10.jpg" alt="">
+                <h1>price- <strike>$800</strike> / $500 </h1>
+                <h2> buy one get one</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+        <!-- pents -->
+    </div>
+    <div class="container box3">
+        <div class="row content">
+            <div class="col-6 offset-3  pent2">
+                <h1> jeans pent</h1>
+                <h2>collection</h2>
+            </div>
+        </div>
+        <div class="row content2 ">
+            <div class="col-6 offset-3 4 pent3">
+
+            </div>
+        </div>
+        <div class="row content3">
+            <div class="col-sm-3  one">
+                <img src="pents/pent1.jpg" alt="">
+                <h1>price- $258</h1>
+                <h2> sales 20% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <div class="col-sm-3  two">
+                <img src="pents/pent2.jpg" alt="">
+                <h1>price- $899</h1>
+                <h2> sales 20% off</h2>
+                <ul>
+                    <li><i class="fa-sol
+                         fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+            </div>
+            <div class="col-sm-3  three">
+                <img src="pents/pent3.jpg" alt="">
+                <h1>price- $455</h1>
+                <h2> sales 20% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i  class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+            <div class="col-sm-3  four">
+                <img src="pents/pent4.jpg" alt="">
+                <h1>price- $985</h1>
+                <h2> sales 20% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row content4">
+            <div class="col-sm-3  one">
+                <img src="pents/pent5.jpg" alt="">
+                <h1>price- $356</h1>
+                <h2> sales 70% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+            </div>
+            <div class="col-sm-3  two">
+                <img src="pents/pent6.jpg" alt="">
+                <h1>price- $200</h1>
+                <h2> sales 70% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+            </div>
+            <div class="col-sm-3  three">
+                <img src="pents/pent7.jpg" alt="">
+                <h1>price- $85</h1>
+                <h2> sales 70% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+            <div class="col-sm-3  four">
+                <img src="pents/pent8.jpg" alt="">
+                <h1>price- $120</h1>
+                <h2> sales 70% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row content5">
+            <div class="col-sm-6  five">
+                <img src="pents/pent9.jpg" alt="">
+                <h1>price- <strike>$1000</strike> / $700 </h1>
+                <h2> buy one get one</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+            <div class="col-sm-6  six">
+                <img src="pents/pent10.jpg" alt="">
+                <h1>price- <strike>$1800</strike> / $1000 </h1>
+                <h2> buy one get one</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul>
+            </div>
+        </div>
+      <!-- coatpent -->
+        <div class="container box4 pent2">
+            <div class="row content">
+                <div class="col-6 offset-3 ">
+                    <h1>coat pent</h1>
+                    <h2>collection</h2>
+                </div>
+            </div>
+            <div class="row content2 ">
+                <div class="col-6 offset-3  coat2">
+                    <!-- <img src="sh" alt=""> -->
+                </div>
+            </div>
+            <div class="row content3 ">
+                <div class="col-sm-3  one1">
+                    <img src="coatpent/coat1.jpg" alt="">
+                    <h1>price- $98</h1>
+                    <h2> sales 10% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  two2">
+                    <img src="coatpent/coat2.jpg" alt="">
+                    <h1>price- $189</h1>
+                <h2> sales 10% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  three3">
+                    <img src="coatpent/coat3.jpg" alt="">
+                    <h1>price- $324</h1>
+                <h2> sales 10% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  four4">
+                    <img src="coatpent/coat4.jpg" alt="">
+                    <h1>price- $385</h1>
+                    <h2> sales 10% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+            </div>
+            <div class="row content4">
+                <div class="col-sm-3  one1"> 
+                    <img src="coatpent/coat5.jpg" alt="">
+                    <h1>price- $200</h1>
+                 <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  two2">
+                    <img src="coatpent/coat6.jpg" alt="">
+                    <h1>price- $289</h1>
+                <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  three3">
+                    <img src="coatpent/coat7.jpg" alt="">
+                    <h1>price- $290</h1>
+                <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  four4">
+                    <img src="coatpent/coat8.jpg" alt="">
+                    <h1>price- $200</h1>
+                <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+            </div>
+
+            <div class="row content5">
+                <div class="col-sm-6  five5"> 
+                    <img src="coatpent/coat9.jpg" alt="">
+                    <h1>price- <strike>$2000</strike> / $1200 </h1>
+                <h2> buy one get one</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul> 
+                </div>
+
+                <div class="col-sm-6  six6">
+                    <img src="coatpent/coat10.jpg" alt="">
+                    <h1>price- <strike>$3000</strike> / $1700 </h1>
+                <h2> buy one get one</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul> 
+                </div>
+            </div>
+           <!-- shoes -->
+                <div class="container box5 ">
+            <div class="row content">
+                <div class="col-6 offset-3 ">
+                    <h1>shoes</h1>
+                    <h2>collection</h2>
+                </div>
+            </div>
+            <div class="row content2 ">
+                <div class="col-6 offset-3  shoes2">
+                    <!-- <img src="sh" alt=""> -->
+                </div>
+            </div>
+            <div class="row content3 ">
+                <div class="col-sm-3  one1">
+                    <img src="shoes/shoes1.jpg" alt="">
+                    <h1>price- $23</h1>
+                    <h2> sales 50% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  two2">
+                    <img src="shoes/shoes2.jpg" alt="">
+                    <h1>price- $90</h1>
+                <h2> sales 50% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  three3">
+                    <img src="shoes/shoes3.jpg" alt="">
+                    <h1>price- $243</h1>
+                <h2> sales 50% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  four4">
+                    <img src="shoes/shoes4.jpg" alt="">
+                    <h1>price- $405</h1>
+                    <h2> sales 50% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li> 
+                </ul>
+                </div>
+
+            </div>
+            <div class="row content4">
+                <div class="col-sm-3  one1"> 
+                    <img src="shoes/shoes5.jpg" alt="">
+                    <h1>price- $260</h1>
+                 <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  two2">
+                    <img src="shoes/shoes6.jpg" alt="">
+                    <h1>price- $359</h1>
+                <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  three3">
+                    <img src="shoes/shoes7.jpg" alt="">
+                    <h1>price- $480</h1>
+                <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+                <div class="col-sm-3  four4">
+                    <img src="shoes/shoes8.jpg" alt="">
+                    <h1>price- $600</h1>
+                <h2> sales 30% off</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+                </div>
+
+            </div>
+
+            <div class="row content5">
+                <div class="col-sm-6  five5"> 
+                    <img src="shoes/shoes9.jpg" alt="">
+                    <h1>price- <strike>$6000</strike> / $5000 </h1>
+                <h2> buy one get one</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul> 
+                </div>
+
+                <div class="col-sm-6  six66">
+                    <img src="shoes/shoes10.jpg" alt="">
+                    <h1>price- <strike>$12000</strike> / $10000 </h1>
+                <h2> buy one get one</h2>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                </ul> 
+                </div>
+            </div>
+
+            <!-- watchlogo -->
+            <div class="container box6 ">
+                <div class="row content">
+                    <div class="col-6 offset-3 ">
+                        <h1>watches</h1>
+                        <h2>collection</h2>
+                    </div>
+                </div>
+                <div class="row content2 ">
+                    <div class="col-6 offset-3 border watch2">
+                        <!-- <img src="sh" alt=""> -->
+                    </div>
+                </div>
+                <div class="row content3 ">
+                    <div class="col-sm-3  one1">
+                        <img src="watches/alamy.jpg" alt="">
+                        <h1>price- $918</h1>
+                        <h2> sales 70% off</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    </ul>
+                    </div>
+    
+                    <div class="col-sm-3  two2">
+                        <img src="watches/faruugo.jpg" alt="">
+                        <h1>price- $512</h1>
+                    <h2> sales 70% off</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                    </ul>
+                    </div>
+    
+                    <div class="col-sm-3  three3">
+                        <img src="watches/galaxy.jpg" alt="">
+                        <h1>price- $1080</h1>
+                    <h2> sales 70% off</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    </div>
+    
+                    <div class="col-sm-3  four4">
+                        <img src="watches/haylou.jpg" alt="">
+                        <h1>price- $1234</h1>
+                        <h2> sales 70% off</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    </div>
+    
+                </div>
+                <div class="row content4">
+                    <div class="col-sm-3  one1"> 
+                        <img src="watches/istocl.jpg" alt="">
+                        <h1>price- $2000</h1>
+                     <h2> sales 40% off</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    </div>
+    
+                    <div class="col-sm-3  two2">
+                        <img src="watches/pollice.jpg" alt="">
+                        <h1>price- $2890</h1>
+                    <h2> sales 40% off</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    </div>
+    
+                    <div class="col-sm-3  three3">
+                        <img src="watches/raizada.jpg" alt="">
+                        <h1>price- $3000</h1>
+                    <h2> sales 40% off</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    </div>
+    
+                    <div class="col-sm-3  four4">
+                        <img src="watches/vecteezy.jpg" alt="">
+                        <h1>price- $2799</h1>
+                    <h2> sales 40% off</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                        <li><i class="fa-regular fa-star"></i></li>
+                    </ul>
+                    </div>
+    
+                </div>
+    
+                <div class="row content5">
+                    <div class="col-sm-6  five5"> 
+                        <img src="watches/watch9.jpg" alt="">
+                        <h1>price- <strike>$20000</strike> / $18000 </h1>
+                    <h2> buy one get one</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul> 
+                    </div>
+    
+                    <div class="col-sm-6  six6">
+                        <img src="watches/watch10.jpg" alt="">
+                        <h1>price- <strike>$30000</strike> / $27000 </h1>
+                    <h2> buy one get one</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>   
+                    </div>
+                </div>
+                <!-- perfume -->
+                <div class="container box7 ">
+                    <div class="row content">
+                        <div class="col-6 offset-3 ">
+                            <h1>perfumes</h1>
+                            <h2>collection</h2>
+                        </div>
+                    </div>
+                    <div class="row content2 ">
+                        <div class="col-6 offset-3  perfume2">
+                            <!-- <img src="sh" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="row content3 ">
+                        <div class="col-sm-3  one1">
+                            <img src="perfumes/all rounder.jpg" alt="">
+                            <h1>price- $1918</h1>
+                            <h2> sales 20% off</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                        </ul>
+                        </div>
+        
+                        <div class="col-sm-3  two2">
+                            <img src="perfumes/gucci gulty.jpg" alt="">
+                            <h1>price- $358</h1>
+                        <h2> sales 20% off</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                        </ul>
+                        </div>
+        
+                        <div class="col-sm-3  three3">
+                            <img src="perfumes/jean paul.jpg" alt="">
+                            <h1>price- $787</h1>
+                        <h2> sales 20% off</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        </div>
+        
+                        <div class="col-sm-3  four4">
+                            <img src="perfumes/jimmy choo.jpg" alt="">
+                            <h1>price- $753</h1>
+                            <h2> sales 20% off</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        </div>
+        
+                    </div>
+                    <div class="row content4">
+                        <div class="col-sm-3  one1"> 
+                            <img src="perfumes/macho man.jpg" alt="">
+                            <h1>price- $9484</h1>
+                         <h2> sales 10% off</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        </div>
+        
+                        <div class="col-sm-3  two2">
+                            <img src="perfumes/nautica blue.jpg" alt="">
+                            <h1>price- $4075</h1>
+                        <h2> sales 10% off</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        </div>
+        
+                        <div class="col-sm-3 three3">
+                            <img src="perfumes/perfume1.jpg" alt="">
+                            <h1>price- $9843</h1>
+                        <h2> sales 10% off</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        </div>
+        
+                        <div class="col-sm-3  four4">
+                            <img src="perfumes/perfume2.jpg" alt="">
+                            <h1>price- $3499</h1>
+                        <h2> sales 10% off</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                        </div>
+        
+                    </div>
+        
+                    <div class="row content5">
+                        <div class="col-sm-6  five5"> 
+                            <img src="perfumes/perfume3.jpg" alt="">
+                            <h1>price- <strike>$56000</strike> / $50000 </h1>
+                        <h2> buy one get one</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul> 
+                        </div>
+        
+                        <div class="col-sm-6  six6">
+                            <img src="perfumes/zidan classic.jpg" alt="">
+                            <h1>price- <strike>$23000</strike> / $20000 </h1>
+                        <h2> buy one get one</h2>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                        </ul>   
+                        </div>
+                    </div>
+</body>
+</html>
